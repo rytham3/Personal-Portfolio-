@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rytham Bhagat — Web Developer</title>
-  <meta name="description" content="Portfolio of Rytham Bhagat — Web Developer focused on building products. Enthusiastic about Backend Development. Skills: HTML, CSS, TailwindCSS, JavaScript, Python, C, C++." />
-  <link rel="stylesheet" href="main.css" />
+  <title>Rytham Bhagat — Data Scientist & AI ML Engineer</title>
+  <meta name="description" content="Portfolio of Rytham Bhagat — Aspiring Data Scientist and AI ML Engineer. Skills: Python, HTML, CSS, TailwindCSS, JavaScript, C, C++." />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
+<script>
+  // Set default theme to dark
+  document.documentElement.setAttribute('data-theme', 'dark');
+  
+  // Load saved theme preference
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
 <body>
   <div class="bg-decor" aria-hidden="true"></div>
 
@@ -17,8 +25,18 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#contact" class="btn btn-primary btn-sm">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -28,9 +46,9 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Web Developer</p>
-          <h1>Hi, I’m <span class="highlight">Rytham Bhagat</span>.</h1>
-          <p class="subtitle">I build products for the web. Enthusiastic about <strong>Backend Development</strong> and crafting robust, scalable solutions.</p>
+          <p class="eyebrow">Aspiring Data Scientist & AI ML Engineer</p>
+          <h1>Hi, I'm <span class="highlight">Rytham Bhagat</span>.</h1>
+          <p class="subtitle">I'm passionate about <strong>Data Science</strong>, <strong>Machine Learning</strong>, and building intelligent solutions that drive impactful decisions.</p>
           <div class="hero-ctas">
             <a href="#skills" class="btn btn-primary">View Skills</a>
             <a href="#contact" class="btn btn-ghost">Get in Touch</a>
@@ -39,7 +57,7 @@
         <div class="hero-photo">
           <!-- Place your portrait image at: LEVEL 1/Task 2 - Personal Portfolio/src/assets/profile.jpg -->
           <figure class="avatar">
-            <img src="My Pic.jpg" alt="Portrait of Rytham Bhagat" />
+            <img src="styles/My Pic.jpg" alt="Portrait of Rytham Bhagat" />
           </figure>
         </div>
       </div>
@@ -49,7 +67,7 @@
     <section id="about" class="about section">
       <div class="container">
         <h2 class="section-title">About</h2>
-        <p class="lead">I am a Web Developer focused on building products that solve real problems and deliver delightful user experiences. I enjoy working across the stack with a growing passion for backend systems, performance, and reliability.</p>
+        <p class="lead">I am an aspiring Data Scientist and AI ML Engineer passionate about exploring data to uncover insights and building intelligent systems. I enjoy working with Python for data science, machine learning, and creating impactful solutions through data-driven approaches. My journey spans from content creation to data analysis, continuously learning and applying cutting-edge technologies.</p>
       </div>
     </section>
 
@@ -58,11 +76,11 @@
       <div class="container">
         <h2 class="section-title">Skills</h2>
         <ul class="skill-list">
+          <li>Python</li>
           <li>HTML</li>
           <li>CSS</li>
           <li>TailwindCSS</li>
           <li>JavaScript</li>
-          <li>Python</li>
           <li>C</li>
           <li>C++</li>
         </ul>
@@ -78,6 +96,57 @@
             <div class="content">
               <div class="card-head" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
                 <div style="display:flex;align-items:center;gap:10px">
+                  <h3 style="margin:0">Python Programming Intern</h3>
+                </div>
+                <div class="time" style="opacity:.9">Aug 2025 — Sep 2025</div>
+              </div>
+              <p style="margin-bottom:0.5rem"><strong>CodSoft</strong></p>
+              <ul style="margin:0;padding-left:1.5rem;opacity:.9">
+                <li>Explored Python programming in-depth</li>
+                <li>Learned in-built data structures, functions, OOPS concepts, etc.</li>
+                <li>Explored various modules and packages</li>
+                <li>Worked on various real-world projects</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="content">
+              <div class="card-head" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <h3 style="margin:0">Web Development Intern</h3>
+                </div>
+                <div class="time" style="opacity:.9">Jul 2025 — Aug 2025</div>
+              </div>
+              <p style="margin-bottom:0.5rem"><strong>Oasis Infobyte</strong></p>
+              <ul style="margin:0;padding-left:1.5rem;opacity:.9">
+                <li>Explored frontend technologies: HTML, CSS, JavaScript</li>
+                <li>Learned to make responsive UI interfaces: Personal Portfolio, Antivirus Landing Page, etc.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="content">
+              <div class="card-head" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <h3 style="margin:0">Data Science Training</h3>
+                </div>
+                <div class="time" style="opacity:.9">Jun 2024 — Aug 2024</div>
+              </div>
+              <p style="margin-bottom:0.5rem"><strong>Itronix Solution</strong></p>
+              <ul style="margin:0;padding-left:1.5rem;opacity:.9">
+                <li>Learned Python Programming for data science</li>
+                <li>Worked with MySQL databases for data storage and retrieval</li>
+                <li>Analyzed datasets using NumPy and Pandas for insights and visualization</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="content">
+              <div class="card-head" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <div style="display:flex;align-items:center;gap:10px">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path d="M23.5 6.2a3.41 3.41 0 0 0-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5A3.41 3.41 0 0 0 .5 6.2 35.4 35.4 0 0 0 0 12a35.4 35.4 0 0 0 .5 5.8 3.41 3.41 0 0 0 2.4 2.4c2.1.5 9.1.5 9.1.5s7 0 9.1-.5a3.41 3.41 0 0 0 2.4-2.4c.4-2 .5-5.8.5-5.8s-.1-3.8-.5-5.8Z" fill="#FF0000"/>
                     <path d="M9.75 15.02V8.98L15.5 12l-5.75 3.02Z" fill="#fff"/>
@@ -86,8 +155,74 @@
                 </div>
                 <div class="time" style="opacity:.9">Mar 2018 — Feb 2022</div>
               </div>
-              <p>Created and published content consistently, building audience engagement and improving communication, scripting, basic video editing, and storytelling skills.</p>
+              <ul style="margin:0;padding-left:1.5rem;opacity:.9">
+                <li>Passionate about computers and IT since schooling</li>
+                <li>Used many video editing tools like DaVinci Resolve, Filmora, VNDC, Inshot, etc.</li>
+                <li>Some videos exceeded 26,000 views at that time</li>
+              </ul>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Personal Portfolio</h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="project-description">A responsive and modern personal portfolio website showcasing my skills, experience, and projects with a clean design and smooth user experience.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://personal-portfolio-one-iota-74.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project →
+            </a>
+          </article>
+          
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Antivirus Landing Page</h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="project-description">A sleek landing page for an antivirus product featuring modern UI design, responsive layout, and engaging user interface elements.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>TailwindCSS</span>
+            </div>
+            <a href="https://antivirus-landing-page-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project →
+            </a>
+          </article>
+          
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Temperature Convertor</h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M7 7h10v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="project-description">An interactive temperature conversion tool that allows users to convert between Celsius, Fahrenheit, and Kelvin scales with real-time updates.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://temperature-convertor-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              Visit Project →
+            </a>
           </article>
         </div>
       </div>
@@ -98,8 +233,12 @@
       <div class="container">
         <h2 class="section-title">Education</h2>
         <div class="edu-card">
-          <h3>B.Tech in Computer Science and Engineering</h3>
-          <p><strong>DAV Institute of Engineering and Technology</strong> — Currently pursuing</p>
+          <h3>B.Tech CSE (Final Year)</h3>
+          <p><strong>DAVIET, Jalandhar</strong> — CGPA till now: <strong>7.06</strong></p>
+        </div>
+        <div class="edu-card">
+          <h3>XII Non Medical (CBSE)</h3>
+          <p><strong>Dayanand Model School, Jalandhar</strong> — CGPA: <strong>8.1/10</strong></p>
         </div>
       </div>
     </section>
@@ -109,12 +248,14 @@
       <div class="container contact-grid">
         <div>
           <h2 class="section-title">Contact</h2>
-          <p>Let’s collaborate or just say hello.</p>
+          <p>Let's collaborate or just say hello.</p>
         </div>
         <div class="links">
           <a href="mailto:rythamb5@gmail.com" class="contact-item">✉️ rythamb5@gmail.com</a>
-          <a href="https://www.linkedin.com/in/rythamb47/" class="contact-item" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+          <div class="contact-item">📍 Jalandhar, Punjab</div>
+          <div class="contact-item">📞 8968422392</div>
           <a href="https://github.com/rytham3" class="contact-item" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+          <a href="https://www.linkedin.com/in/rythamb47/" class="contact-item" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
         </div>
       </div>
     </section>
@@ -126,6 +267,18 @@
       <p>© 2025 Rytham Bhagat. All rights reserved.</p>
     </div>
   </footer>
-</body>
 
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  </script>
+</body>
 </html> 
